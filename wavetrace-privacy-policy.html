@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WaveTrace Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for WaveTrace — Music Finder and the WaveTrace Companion.">
+  <style>
+    :root{
+      --bg:#0f1f33;
+      --panel:#142941;
+      --panel2:#19324e;
+      --text:#f6f9ff;
+      --muted:#b9c9df;
+      --blue:#4d8dff;
+      --cyan:#39b8f6;
+      --green:#45d7aa;
+      --line:#274865;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(77,141,255,.25), transparent 35%),
+        linear-gradient(180deg,#0d1a2b,var(--bg));
+      color:var(--text);
+      line-height:1.6;
+    }
+    main{max-width:900px;margin:0 auto;padding:48px 22px 72px}
+    .brand{
+      display:flex;align-items:center;gap:14px;margin-bottom:28px
+    }
+    .logo{
+      width:48px;height:48px;border-radius:14px;background:var(--blue);
+      display:grid;place-items:center;font-weight:800;font-size:26px;
+      box-shadow:0 10px 30px rgba(77,141,255,.3)
+    }
+    .brand h1{margin:0;font-size:1.75rem}
+    .brand p{margin:2px 0 0;color:var(--muted)}
+    .card{
+      background:rgba(20,41,65,.9);border:1px solid var(--line);
+      border-radius:18px;padding:28px;margin:20px 0;
+      box-shadow:0 18px 50px rgba(0,0,0,.18)
+    }
+    h2{font-size:1.2rem;margin:0 0 10px}
+    h3{font-size:1rem;margin:22px 0 8px}
+    p,li{color:#dbe6f5}
+    a{color:#89b7ff}
+    .pill{
+      display:inline-block;padding:5px 10px;border-radius:999px;
+      background:rgba(69,215,170,.12);color:#79e5c1;font-size:.85rem;
+      border:1px solid rgba(69,215,170,.28)
+    }
+    .muted{color:var(--muted);font-size:.95rem}
+    code{background:#0a1725;padding:2px 6px;border-radius:6px}
+    footer{color:var(--muted);font-size:.9rem;margin-top:30px}
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <div class="logo">≈</div>
+    <div>
+      <h1>WaveTrace — Privacy Policy</h1>
+      <p>Music Finder browser extension and WaveTrace Companion</p>
+    </div>
+  </div>
+
+  <p class="pill">Effective date: September 5, 2026</p>
+
+  <div class="card">
+    <h2>1. Overview</h2>
+    <p>
+      WaveTrace is a browser extension whose single purpose is to identify music playing in the
+      user's current browser tab. This Privacy Policy explains what information WaveTrace handles,
+      why it is needed, and when information is sent to third-party music-recognition providers.
+    </p>
+    <p>
+      WaveTrace does not operate an advertising network, does not sell user data, and does not use
+      browsing activity for advertising, profiling, credit scoring, or unrelated purposes.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Information WaveTrace Handles</h2>
+
+    <h3>Tab audio</h3>
+    <p>
+      WaveTrace captures audio from the current browser tab only after the user explicitly starts
+      a recognition. The audio is used only for music identification. WaveTrace does not
+      continuously record browser tabs in the background.
+    </p>
+
+    <h3>Recognition-provider credentials</h3>
+    <p>
+      Some supported providers require the user to supply an API key or other provider credential.
+      These credentials are stored in the browser extension's storage so the user's configuration
+      can persist. A credential is used only with the corresponding provider for recognition
+      requests initiated by the user.
+    </p>
+
+    <h3>Settings and recognition history</h3>
+    <p>
+      WaveTrace stores configuration such as enabled providers, recognition duration, appearance,
+      language, and recognition history in extension storage. These records support WaveTrace's
+      music-identification functionality and user experience.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>3. Third-Party Recognition Providers</h2>
+    <p>
+      When the user starts recognition, WaveTrace may send the audio data or derived fingerprint
+      data required by the recognition providers that the user has enabled. Supported workflows
+      can include providers such as AudD, ACRCloud, Shazam-based recognition, and AcoustID.
+    </p>
+    <p>
+      For AcoustID whole-song recognition, the WaveTrace Companion can process captured audio
+      locally with Chromaprint to generate an audio fingerprint. AcoustID receives the fingerprint
+      and recording-duration information required for lookup rather than the original full-song
+      audio. If a partial whole-song recognition falls back to an enabled short-scan provider,
+      the required short audio clip may be sent to that provider.
+    </p>
+    <p>
+      Third-party providers process requests under their own terms and privacy policies. Their
+      availability, retention practices, quotas, pricing, and policies are controlled by those
+      providers and may change independently of WaveTrace.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>4. WaveTrace Companion</h2>
+    <p>
+      Some recognition features use the optional WaveTrace Companion for Windows. The Companion is
+      a local Native Messaging application installed on the user's computer. Chromium launches it
+      on demand when native functionality is required and it does not need to run permanently.
+    </p>
+    <p>
+      The Companion is used only to support WaveTrace recognition functions, including local audio
+      processing required by supported recognition workflows.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>5. What WaveTrace Does Not Collect for Its Own Purposes</h2>
+    <ul>
+      <li>No names, postal addresses, health information, or financial information are requested by WaveTrace.</li>
+      <li>No advertising identifiers are used.</li>
+      <li>No keystroke, mouse-movement, or general browsing-behavior tracking is performed.</li>
+      <li>WaveTrace does not sell user data.</li>
+      <li>WaveTrace does not use user data for credit scoring or lending purposes.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6. Data Retention and Control</h2>
+    <p>
+      WaveTrace itself does not operate a remote account database for extension users. Settings,
+      provider credentials, and recognition history stored by the extension remain in browser
+      extension storage until the user changes or removes them, clears extension data, or uninstalls
+      the extension, subject to the browser's own storage behavior.
+    </p>
+    <p>
+      Data sent to a third-party recognition provider is subject to that provider's retention and
+      privacy practices. WaveTrace does not control third-party retention.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>7. External Music Links</h2>
+    <p>
+      Recognition results may include links to external music services such as Spotify, Apple Music,
+      MusicBrainz, or other metadata/music services. Opening an external link takes the user to that
+      service, where that service's own privacy policy applies.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>8. Security</h2>
+    <p>
+      WaveTrace limits data handling to what is needed for music recognition and related settings.
+      Users should keep their provider API credentials private and revoke or replace a credential
+      through the relevant provider if they believe it has been compromised.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      This policy may be updated when WaveTrace's functionality or data practices change. The
+      effective date at the top of this page will be updated when material changes are made.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>10. Contact</h2>
+    <p>
+      For privacy questions about WaveTrace, contact:
+      <strong>wavetracelmt@gmail.com</strong>
+    </p>
+    <p class="muted">
+      Replace the placeholder above with the same verified publisher/support email you use for the
+      Chrome Web Store before publishing this page.
+    </p>
+  </div>
+
+  <footer>
+    WaveTrace — Music Finder · Privacy Policy
+  </footer>
+</main>
+</body>
+</html>
